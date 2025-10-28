@@ -1,0 +1,214 @@
+
+      <!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>바다로 흘러가는 플라스틱...</title>
+  <style>
+    /* 기본 설정 */
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans KR", sans-serif;
+      background: linear-gradient(to bottom, #e3f2fd, #fdfdfd);
+      color: #222;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 80px;
+      background: linear-gradient(180deg, #90e0ef, #caf0f8);
+      color: #023e8a;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: 0;
+      right: 0;
+      height: 200px;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.4), transparent 70%);
+      animation: float 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes float {
+      from { transform: translateY(0px); }
+      to { transform: translateY(20px); }
+    }
+
+    header h1 {
+      font-size: 2.6em;
+      margin-bottom: 15px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    header p {
+      font-size: 1.15em;
+      line-height: 1.8;
+      max-width: 640px;
+      margin: 0 auto;
+      color: #05445e;
+    }
+
+    main {
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      height: 100vh;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 20px;
+      max-width: 750px;
+      margin: 60px auto;
+      background: #ffffffb8;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+      border-radius: 25px;
+      text-align: center;
+      scroll-snap-align: start;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+    }
+
+    section img {
+      width: 100%;
+      border-radius: 18px;
+      margin-bottom: 25px;
+      transition: transform 0.4s ease;
+    }
+
+    section img:hover {
+      transform: scale(1.05);
+    }
+
+    section h2 {
+      color: #0077b6;
+      font-size: 1.8em;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    section p {
+      line-height: 1.8;
+      font-size: 1.1em;
+      max-width: 640px;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background-color: #0077b6;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1em;
+      letter-spacing: 0.5px;
+    }
+
+    /* 반응형 디자인 */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2em; }
+      section { padding: 60px 15px; }
+      section h2 { font-size: 1.4em; }
+      section p { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>바다로 흘러가는 플라스틱...</h1>
+    <p>
+      우리의 편리함이 바다의 고통이 되고 있습니다.<br>
+      매년 약 4억 톤의 플라스틱이 생산되고, 그중 대부분은 버려집니다.<br>
+      지금 멈추지 않으면, 바다는 쓰레기로 뒤덮일 것입니다.
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <img src="2.png" alt="플라스틱 사용 현황">
+      <h2>플라스틱 사용 현황</h2>
+      <p>전 세계에서 생산된 플라스틱의 단 9%만이 재활용됩니다.<br>
+      나머지는 땅속에 묻히거나 바다로 흘러가며 지구를 병들게 합니다.</p>
+    </section>
+
+    <section>
+      <img src="3.png" alt="해양오염">
+      <h2>바다를 덮은 쓰레기</h2>
+      <p>매년 800만 톤의 플라스틱이 바다로 유입됩니다.<br>
+      해양 생물은 플라스틱을 먹이로 착각하고 목숨을 잃습니다.</p>
+    </section>
+
+    <section>
+      <img src="4.png" alt="일회용 플라스틱">
+      <h2>한 번 쓰고, 백 년의 흔적</h2>
+      <p>일회용컵, 빨대, 비닐봉지 — 단 몇 분의 편리함을 위해<br>
+      자연은 수백 년의 고통을 견뎌야 합니다.</p>
+    </section>
+
+    <section>
+      <img src="5.png" alt="과다생산과 소비문화">
+      <h2>과다생산과 소비문화</h2>
+      <p>“편리함의 대가” — 지난 50년간 플라스틱 사용량은 20배 증가했습니다.<br>
+      우리 일상의 선택이 지구의 미래를 바꿉니다.</p>
+    </section>
+
+    <section>
+      <img src="6.png" alt="건강에 미치는 영향">
+      <h2>우리 몸속의 미세플라스틱</h2>
+      <p>미세플라스틱은 물과 음식, 공기를 통해 우리의 혈관까지 침투합니다.<br>
+      인체 호르몬, 면역, 장 건강에 심각한 영향을 미칠 수 있습니다.</p>
+    </section>
+
+    <section>
+      <img src="7.png" alt="환경에 미치는 영향">
+      <h2>지속되는 오염의 악순환</h2>
+      <p>플라스틱은 분해되지 않으며, 토양과 수질, 동식물 모두에 피해를 줍니다.<br>
+      2050년에는 바다 속 플라스틱의 무게가 물고기와 같아질 것이라 예측됩니다.</p>
+    </section>
+
+    <section>
+      <img src="8.png" alt="대체 가능한 제품">
+      <h2>바꿀 수 있는 선택</h2>
+      <p>재사용 가능한 용기, 천 가방, 유리컵, 바이오소재.<br>
+      작지만 지속 가능한 대체품으로 지구를 지킬 수 있습니다.</p>
+    </section>
+
+    <section>
+      <img src="9.png" alt="실천 방법">
+      <h2>작은 실천이 만드는 큰 변화</h2>
+      <p>일회용품 대신 텀블러를, 비닐봉지 대신 장바구니를.<br>
+      오늘의 작은 선택이 내일의 바다를 맑게 합니다.</p>
+    </section>
+
+    <section>
+      <img src="10.png" alt="결론 및 캠페인">
+      <h2>지구를 위한 우리의 약속</h2>
+      <p>“편리함을 줄이고, 미래를 지키자.”<br>
+      지금 당신의 행동 하나가 지구를 살립니다.<br><br>
+      🌊 함께 플라스틱 제로 캠페인에 참여하세요!</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 바다를 지키는 사람들 | Save the Ocean, Save Us 🌍
+    25101009 홀랑 
+  </footer>
+</body>
+</html>
